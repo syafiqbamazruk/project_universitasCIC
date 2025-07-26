@@ -4036,6 +4036,10 @@ footer .copyright_row P {
     gap: 32px;
 }
 
+.filter_row .left_block h4{
+    padding-left: 52px;
+}
+
 @media (max-width: 575px) {
     .filter_row .left_block {
         gap: 16px;
