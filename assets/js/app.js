@@ -1,8 +1,3 @@
-// Template Name: Educate
-// Template URL: https://techpedia.co.uk/template/Educate
-// Description: Educate Html 5 Template
-// Version: 1.0.0
-
 (function(window, document, $, undefined) {
     "use strict";
     var Init = {
