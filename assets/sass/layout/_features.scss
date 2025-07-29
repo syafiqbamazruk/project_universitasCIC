@@ -1,4 +1,3 @@
-// Features Styling
 .feature__card {
     position: relative;
     @include media-query(575px) {
@@ -15,14 +14,14 @@
         border-radius: 50%;
         width: fit-content;
         padding: 25px;
-        border: 5px solid rgba(10, 166, 215, 0.2);
+        // border: 5px solid #000000;
         margin: 0 auto;
         box-shadow: $shadow;
         transition: $transition;
     }
     &:hover {
         .feature__icon {
-            border: 5px solid rgba(10, 166, 215, 0.4);
+            // border: 5px solid #0aa6d766;
             transition: $transition;
         }
     }
