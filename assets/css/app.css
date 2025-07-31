@@ -4135,7 +4135,6 @@ footer .copyright_row P {
     position: relative;
     z-index: 10;
     background: url(../media/backgrounds/blog_card_bg.png) no-repeat;
-    background-size: contain;
     background-position: top;
     margin-top: -88px;
     box-shadow: drop-shadow(-2px -1px 5px rgba(2, 69, 122, 0.04)) drop-shadow(-9px -4px 10px rgba(2, 69, 122, 0.03)) drop-shadow(-19px -10px 13px rgba(2, 69, 122, 0.02)) drop-shadow(-35px -17px 15px rgba(2, 69, 122, 0.01)) drop-shadow(-54px 27px 17px rgba(2, 69, 122, 0));
@@ -4182,7 +4181,7 @@ footer .copyright_row P {
     border: 1px solid #0352a1;
 }
 
-.blog_list_card {
+/* .blog_list_card {
     background-color: #fefcfb;
     box-shadow: 2px 1px 5px 0px rgba(2, 69, 122, 0.04), 9px 4px 10px 0px rgba(2, 69, 122, 0.03), 19px 10px 13px 0px rgba(2, 69, 122, 0.02), 35px 17px 15px 0px rgba(2, 69, 122, 0.01), 54px 27px 17px 0px rgba(2, 69, 122, 0);
     border-radius: 15px;
@@ -4219,7 +4218,6 @@ footer .copyright_row P {
     position: relative;
     z-index: 10;
     background: url(../media/backgrounds/blog_card_list_bg.png) no-repeat;
-    background-size: cover;
     background-position: left;
     margin-left: -80px;
     border-radius: 0 15px 15px 0;
@@ -4319,7 +4317,7 @@ footer .copyright_row P {
 
 .blog_detail .tags span {
     color: #7a8582;
-}
+} */
 
 .team {
     position: relative;
