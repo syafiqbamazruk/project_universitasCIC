@@ -4661,6 +4661,11 @@ footer .copyright_row P {
     transition: all 0.4s linear 0s;
 }
 
+/* .g_c:hover .gallery_card img {
+    width: 370px;
+    height: 370px;
+} */
+
 .gallery-2 .img-block {
     overflow: hidden;
     border-radius: 10px;
