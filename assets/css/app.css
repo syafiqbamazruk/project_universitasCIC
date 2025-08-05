@@ -4661,6 +4661,7 @@ footer .copyright_row P {
     transition: all 0.4s linear 0s;
 }
 
+
 /* .g_c:hover .gallery_card img {
     width: 370px;
     height: 370px;
@@ -6899,6 +6900,87 @@ footer .copyright_row P {
     }
     100% {
         box-shadow: 0 0 0 30px rgba(10, 166, 215, 0.09), 0 0 0 50px rgba(10, 166, 215, 0.09), 0 0 0 70px rgba(10, 166, 215, 0);
+    }
+}
+
+.wa-float {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 99999;
+    border-radius: 50%;
+    padding: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.wa-float:hover {
+    transform: scale(1.1);
+}
+
+.wa-float img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.wa-popup {
+    position: fixed;
+    bottom: 75px;
+    left: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 8px 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 220px;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-family: sans-serif;
+}
+
+.wa-popup-text {
+    font-size: 14px;
+    color: #222;
+}
+
+.wa-popup-close {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+}
+
+.whatsapp-ripple {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background: #25D366;
+    /* Warna khas WhatsApp */
+    animation: ripple 2s infinite;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.3;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
     }
 }
 

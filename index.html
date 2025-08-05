@@ -159,7 +159,7 @@
                     <span class="icon"><i class="fas fa-phone"></i></span>
                     <div class="text">
                         <strong>Telephone</strong>
-                        <div>+62231-200418</div>
+                        <div>+6289512314188</div>
                     </div>
                 </div>
                 <div class="info-block">
@@ -985,7 +985,7 @@
                     <h2 class="mb-8 color-white">Anda bertanya <br><span class="fm-sec">Kami menjawab</span></h2>
                     <p class="mb-16 color-white">Punya pertanyaan seputar UCIC? Kami siap bantu jawab dengan cepat dan ramah. Hubungi kami sekarang!</p>
                     <div class="mx-auto">
-                        <a href="tel:+62231200418" class="h5 phone_number">+62231-200418</a>
+                        <a href="tel:+6289512314188" class="h5 phone_number">+6289512314188</a>
                     </div>
                     <div class="icons">
                         <img src="assets/media/shapes/dots-1.png" alt="" class="element-1">
@@ -1061,7 +1061,7 @@
                                         <a href="mailto:info@ucic.ac.id"><i class="fal fa-envelope"></i>info@cic.ac.id</a>
                                     </li>
                                     <li>
-                                        <a href="tel:+62231200418"><i class="fal fa-phone-alt"></i>+62231-200418</a>
+                                        <a href="tel:+6289512314188"><i class="fal fa-phone-alt"></i>+6289512314188</a>
                                     </li>
                                 </ul>
                             </div>
@@ -1120,7 +1120,7 @@
                     </li>
                     <li>
                         <i class="fa fa-phone"></i>
-                        <a href="tel:+62231200418">+62231-200418</a>
+                        <a href="tel:+6289512314188">+6289512314188</a>
                     </li>
                 </ul>
                 <div class="mobile-nav__social">
@@ -1153,6 +1153,39 @@
         </svg>
         </a>
         <!-- back-to-top-end -->
+        <!-- WA FLOATING BUTTON -->
+        <div id="waPopup" class="wa-popup">
+            <div class="wa-popup-text">Hubungi Kami</div>
+            <button class="wa-popup-close" onclick="closeWaPopup()">×</button>
+        </div>
+        <a href="https://wa.me/6289512314188" class="wa-float" target="_blank" id="waBtn">
+            <span class="whatsapp-ripple"></span>
+            <img src="iconwa.png" alt="WhatsApp">
+        </a>
+        <script>
+            // Tampilkan WA button dan popup saat halaman dimuat
+            document.addEventListener("DOMContentLoaded", function() {
+                const waBtn = document.getElementById("waBtn");
+                const waPopup = document.getElementById("waPopup");
+
+                waBtn.style.display = "block";
+
+                // hanya tampilkan popup jika belum pernah ditutup sebelumnya
+                if (!localStorage.getItem("waPopupClosed")) {
+                    waPopup.style.display = "flex";
+                } else {
+                    waPopup.style.display = "none";
+                }
+            });
+
+            // Fungsi untuk menutup popup
+            function closeWaPopup() {
+                const waPopup = document.getElementById("waPopup");
+                waPopup.style.display = "none";
+                // Simpan di localStorage agar tidak muncul lagi
+                localStorage.setItem("waPopupClosed", "true");
+            }
+        </script>
 
         <!-- Jquery Js -->
         <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
